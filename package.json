@@ -1,0 +1,29 @@
+{
+  "name": "web-scrapper",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/shoeb00/web-scrapper#readme",
+  "bugs": {
+    "url": "https://github.com/shoeb00/web-scrapper/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shoeb00/web-scrapper.git"
+  },
+  "license": "ISC",
+  "author": "Syed Shoeb",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "devDependencies": {
+    "nodemon": "3.1.10"
+  },
+  "dependencies": {
+    "dotenv": "17.2.2",
+    "puppeteer": "24.22.0",
+    "puppeteer-extra": "3.3.6",
+    "puppeteer-extra-plugin-stealth": "2.11.2"
+  }
+}
