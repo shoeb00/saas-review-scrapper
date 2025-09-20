@@ -1,3 +1,81 @@
 [
-  "https://www.capterra.in/software/174285/amazon-s3"
+  [
+    {
+      "reviewerName": "Jaydeep",
+      "date": "24 June 2023",
+      "title": " Amazon S3 ",
+      "rating": "5.0",
+      "description": "Amazon S3 (Simple Storage Service) has consistently proven to be a reliable and versatile option. This cloud-based storage service offers a wide range of features that cater to different data management needs, ensuring high data availability and performance. Amazon S3 is designed to handle the ever-growing demands of today's data-driven world. Its storage architecture is built to scale, allowing users to store and retrieve any data anytime. This flexibility is crucial for systems engineers, enabling us to adapt to changing requirements and accommodate various data types. Amazon S3 offers a comprehensive suite of data management tools that simplify organizing, securing, and analyzing your data."
+    },
+    {
+      "reviewerName": "Verified Reviewer",
+      "date": "19 November 2023",
+      "title": " Anytime anywhere access with S3! ",
+      "rating": "5.0",
+      "description": null
+    },
+    {
+      "reviewerName": "Shola",
+      "date": "22 December 2023",
+      "title": " Innovation at its best ",
+      "rating": "5.0",
+      "description": "When you are talking of a proper modern file storage and sharing, Amazon S3 is the first software that comes to mind."
+    },
+    {
+      "reviewerName": "Judy",
+      "date": "3 October 2023",
+      "title": " Easy storage with Amazon S3 ",
+      "rating": "5.0",
+      "description": "An amazing software for those interested in cloud storage"
+    },
+    {
+      "reviewerName": "Filippo",
+      "date": "14 November 2023",
+      "title": " A huge and cheap tool for storing several TB of data ",
+      "rating": "5.0",
+      "description": "Amazon S3 is the heart of our cloud architecture, providing all the buckets we need to read/write data, both from production and sand environment. It's highly integrated with other AWS services and it's quite cheap and easy to set up and manage."
+    },
+    {
+      "reviewerName": "taher",
+      "date": "21 December 2023",
+      "title": " Distinctive application ",
+      "rating": "5.0",
+      "description": null
+    },
+    {
+      "reviewerName": "Andrea",
+      "date": "17 November 2023",
+      "title": " Very good tool ",
+      "rating": "5.0",
+      "description": null
+    },
+    {
+      "reviewerName": "Melanie",
+      "date": "13 November 2023",
+      "title": " As a student user... ",
+      "rating": "5.0",
+      "description": null
+    },
+    {
+      "reviewerName": "Joaquin",
+      "date": "11 November 2023",
+      "title": " A good cloud storage option. ",
+      "rating": "4.0",
+      "description": "A very useful service, with many accessible tools and plans, it is very useful for companies interested in data analysis and creating applications."
+    },
+    {
+      "reviewerName": "Julia",
+      "date": "15 November 2023",
+      "title": " Great application ",
+      "rating": "5.0",
+      "description": null
+    },
+    {
+      "reviewerName": "Tonia",
+      "date": "23 June 2023",
+      "title": " Amazon S3 review ",
+      "rating": "3.0",
+      "description": "Amazon S3 did exactly what I wanted it to do once I got past the setup obstacles.  It is a bit difficult to navagate.  Amazon does offer free training for their products which is a plus."
+    }
+  ]
 ]
