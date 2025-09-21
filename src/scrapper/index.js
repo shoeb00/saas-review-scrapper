@@ -60,6 +60,12 @@ class Scrapper {
 
   createSessionG2 = async () => {
     try {
+      const email = process.env.G2_EMAIL;
+      const password = process.env.G2_PASSWORD;
+      if (!email || !password) {
+        console.error('createSessionG2: Missing email or password.');
+        return false;
+      }
       const loginUrl =
         'https://www.g2.com/identities/start_login?return_to=https://www.g2.com/search';
       const page = await this.goto(loginUrl);
