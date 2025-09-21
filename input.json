@@ -4,5 +4,11 @@
     "start_date": "2023-06-01",
     "end_date": "2023-12-30",
     "source": "Capterra"
+  },
+  {
+    "name": "Amazon S3",
+    "start_date": "2023-06-01",
+    "end_date": "2023-12-30",
+    "source": "G2"
   }
 ]
