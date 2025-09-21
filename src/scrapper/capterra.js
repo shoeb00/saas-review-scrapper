@@ -1,11 +1,9 @@
-import Scrapper from './index.js';
-const scrapper = new Scrapper();
+import scrapper from './index.js';
 
 const getProductUrl = async name => {
   try {
     const url = new URL(`https://www.capterra.in/search/product`);
     url.searchParams.set('q', name);
-    await scrapper.init();
     const page = await scrapper.goto(url.href);
     const productUrl = await page.evaluate(() => {
       const container = document.evaluate(
@@ -27,7 +25,22 @@ const getProductUrl = async name => {
 };
 
 const inDateRange = (date, start_date, end_date) => {
-  const d = new Date(date).getTime();
+  const months = {
+    January: 0,
+    February: 1,
+    March: 2,
+    April: 3,
+    May: 4,
+    June: 5,
+    July: 6,
+    August: 7,
+    September: 8,
+    October: 9,
+    November: 10,
+    December: 11,
+  };
+  const [day, month, year] = date.trim().split(' ');
+  const d = new Date(year, months[month], day).getTime();
   if (isNaN(d)) {
     console.log(`Invalid date ${date}`);
     return false;
@@ -112,8 +125,6 @@ const getReviews = async (name, start_date, end_date) => {
       if (!hasNextPage) break;
       pageNumber++;
     }
-    await scrapper.close();
-
     return allReviews;
   } catch (error) {
     console.error(error);
