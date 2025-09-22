@@ -40,8 +40,8 @@ class Scrapper {
       await this.page.setViewport({ width, height });
 
       // Try loading cookies if available
-      if (fs.existsSync('cookies.json')) {
-        const cookies = JSON.parse(fs.readFileSync('cookies.json'));
+      if (fs.existsSync('cookies/g2.json')) {
+        const cookies = JSON.parse(fs.readFileSync('cookies/g2.json'));
         await this.page.setCookie(...cookies);
         console.log('✅ Loaded session cookies');
       }
@@ -54,8 +54,8 @@ class Scrapper {
   // Run once manually to save cookies after successful login
   saveCookies = async () => {
     const cookies = await this.page.cookies();
-    fs.writeFileSync('cookies.json', JSON.stringify(cookies, null, 2));
-    console.log('✅ Cookies saved to cookies.json');
+    fs.writeFileSync('cookies/g2.json', JSON.stringify(cookies, null, 2));
+    console.log('✅ Cookies saved to cookies/g2.json');
   };
 
   createSessionG2 = async () => {
