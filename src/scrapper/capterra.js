@@ -1,28 +1,7 @@
 import scrapper from './index.js';
 
-const getProductUrl = async name => {
-  try {
-    const url = new URL(`https://www.capterra.in/search/product`);
-    url.searchParams.set('q', name);
-    const page = await scrapper.goto(url.href);
-    const productUrl = await page.evaluate(() => {
-      const container = document.evaluate(
-        '/html/body/main/div[4]',
-        document,
-        null,
-        XPathResult.FIRST_ORDERED_NODE_TYPE,
-        null
-      ).singleNodeValue;
-      if (!container) return null;
-      return Array.from(container.querySelectorAll('a'))[0]?.href;
-    });
-
-    console.log('Product Url found:', productUrl);
-    return productUrl;
-  } catch (error) {
-    console.error(error);
-  }
-};
+const BASE_URL = 'https://www.capterra.in';
+const XPath = '/html/body/main/div[4]';
 
 const inDateRange = (date, start_date, end_date) => {
   const months = {
@@ -49,10 +28,9 @@ const inDateRange = (date, start_date, end_date) => {
   const e = new Date(end_date).getTime();
   return d >= s && d <= e;
 };
-
 const getReviews = async (name, start_date, end_date) => {
   try {
-    const productUrl = await getProductUrl(name);
+    const productUrl = await scrapper.getProductUrl(name, `${BASE_URL}/search/product`, XPath);
     if (!productUrl) {
       console.error('Product URL not found');
       return null;
@@ -87,14 +65,24 @@ const getReviews = async (name, start_date, end_date) => {
             return el ? el.textContent.trim() : null;
           };
           const date = getText('div.d-lg-flex > div > div.fs-5.text-neutral-90.mb-2');
-          const reviewerName = getText('div.fw-600.mb-1');
+          const authorName = getText('div.fw-600.mb-1');
           const title = getText('h3.fs-3.fw-bold').replace(/"/g, ' ');
           const rating = (() => {
             const ratingSpan = card.querySelector('.star-rating-component .ms-1');
             return ratingSpan ? ratingSpan.textContent.trim() : null;
           })();
-          const description = getText('div.fs-4.lh-2.text-neutral-99 > span');
-          return { reviewerName, date, title, rating, description };
+          const overallFeedback = getText('div.fs-4.lh-2.text-neutral-99 > span')?.trim();
+          const positiveFeedback = getText('div.my-3.my-lg-4 > div.fs-4.lh-2.text-neutral-99');
+          const negativeFeedback = getText('div.mb-3.mb-lg-4 > div.fs-4.lh-2.text-neutral-99');
+          return {
+            authorName,
+            date,
+            title,
+            rating,
+            overallFeedback,
+            positiveFeedback,
+            negativeFeedback,
+          };
         });
 
         const nextLi = document.evaluate(

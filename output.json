@@ -5,78 +5,94 @@
       "date": "24 June 2023",
       "title": " Amazon S3 ",
       "rating": "5.0",
-      "description": "Amazon S3 (Simple Storage Service) has consistently proven to be a reliable and versatile option. This cloud-based storage service offers a wide range of features that cater to different data management needs, ensuring high data availability and performance. Amazon S3 is designed to handle the ever-growing demands of today's data-driven world. Its storage architecture is built to scale, allowing users to store and retrieve any data anytime. This flexibility is crucial for systems engineers, enabling us to adapt to changing requirements and accommodate various data types. Amazon S3 offers a comprehensive suite of data management tools that simplify organizing, securing, and analyzing your data."
+      "overallFeedback": "Amazon S3 (Simple Storage Service) has consistently proven to be a reliable and versatile option. This cloud-based storage service offers a wide range of features that cater to different data management needs, ensuring high data availability and performance. Amazon S3 is designed to handle the ever-growing demands of today's data-driven world. Its storage architecture is built to scale, allowing users to store and retrieve any data anytime. This flexibility is crucial for systems engineers, enabling us to adapt to changing requirements and accommodate various data types. Amazon S3 offers a comprehensive suite of data management tools that simplify organizing, securing, and analyzing your data.",
+      "positiveFeedback": "Amazon S3 is just one part of the wider Amazon Web Services (AWS). This infrastructure as a service (IaaS) platform is a one-stop shop for all your IT requirements. AWS provides over 70 services including analytics, networking, mobile, database, and more. Tools and features you can take advantage of include versioning, which allows you to roll back to previous versions of a file or recover deleted objects, and managed IT services, designed to make running your business easier.One of the main benefits of Amazon S3 is that it offers unlimited server capacity, so you can store your data without worrying about hard drive failure on macOS or service disruption. With unlimited bandwidth, secure email hosting, and more, Amazon S3 and AWS are reliable and scalable as your business expands or grows.",
+      "negativeFeedback": "Unfortunately, one of the main disadvantages of Amazon S3 is that AWS limits resources by location, so some areas may have fewer resources than others. It can also be challenging to find out how many resources you've used, although you can request a resource increase if needed.If you store your data on your MacBook but are considering moving your data to the cloud, it’s normal to be worried about common cloud computing concerns. You might be worried about service downtime and being unable to access your files when you need them. Perhaps privacy and security are your key concerns. Or maybe you’re losing sleep over data leakage risks, particularly if you work with sensitive personal data. Other issues include limited control over your account and data, and backup protection. Because Amazon S3 is so well established and popular, the service already has these concerns covered, so you don’t need to worry about them."
     },
     {
       "reviewerName": "Verified Reviewer",
       "date": "19 November 2023",
       "title": " Anytime anywhere access with S3! ",
       "rating": "5.0",
-      "description": null
+      "positiveFeedback": "S3 provides scalability and integration making it an idle choice ass  a cloud storage. It has straight forward documentation with packages to implement with various programming languages such as node and python.",
+      "negativeFeedback": "The pricing for S3 is quite high for its usage which makes me hesitated while working with S3 and its usage."
     },
     {
       "reviewerName": "Shola",
       "date": "22 December 2023",
       "title": " Innovation at its best ",
       "rating": "5.0",
-      "description": "When you are talking of a proper modern file storage and sharing, Amazon S3 is the first software that comes to mind."
+      "overallFeedback": "When you are talking of a proper modern file storage and sharing, Amazon S3 is the first software that comes to mind.",
+      "positiveFeedback": "I am someone that works with a lot of distant clients. I am happy that Amazon web service have come to the fore of managing data and I can easily transfer completed projects to clients using the Amazon S3.",
+      "negativeFeedback": "It is a little bit complex for beginners."
     },
     {
       "reviewerName": "Judy",
       "date": "3 October 2023",
       "title": " Easy storage with Amazon S3 ",
       "rating": "5.0",
-      "description": "An amazing software for those interested in cloud storage"
+      "overallFeedback": "An amazing software for those interested in cloud storage",
+      "positiveFeedback": "It is the most secure online storage and offers free training.",
+      "negativeFeedback": "it can be slow depending on your location"
     },
     {
       "reviewerName": "Filippo",
       "date": "14 November 2023",
       "title": " A huge and cheap tool for storing several TB of data ",
       "rating": "5.0",
-      "description": "Amazon S3 is the heart of our cloud architecture, providing all the buckets we need to read/write data, both from production and sand environment. It's highly integrated with other AWS services and it's quite cheap and easy to set up and manage."
+      "overallFeedback": "Amazon S3 is the heart of our cloud architecture, providing all the buckets we need to read/write data, both from production and sand environment. It's highly integrated with other AWS services and it's quite cheap and easy to set up and manage.",
+      "positiveFeedback": "It's a cheap solution for storing data. You can easily access AWS s3 both with data processing platforms (e.g. Spark) and client softwares (e.g. Cyberduck). You can also choose which type of storage fits better your need, depending of the access frequency (once a week, once a month, once a year...). AWS S3 supports all data format, while some of them (parquet and iceberg) are highly recommended for storing huge tables. You can also set lifecycle rules to delete old and unused files after a custom period.",
+      "negativeFeedback": "As a minor hiccup, there is some trouble in deleting corrupted files."
     },
     {
       "reviewerName": "taher",
       "date": "21 December 2023",
       "title": " Distinctive application ",
       "rating": "5.0",
-      "description": null
+      "positiveFeedback": "Easy shopping and competitive prices. Ease of dealing and credibility",
+      "negativeFeedback": "There are no negatives. On the contrary, it is useful and economical"
     },
     {
       "reviewerName": "Andrea",
       "date": "17 November 2023",
       "title": " Very good tool ",
       "rating": "5.0",
-      "description": null
+      "positiveFeedback": "I liked all the features of the tool and all its functions",
+      "negativeFeedback": "I didn't like not having known about the tool before"
     },
     {
       "reviewerName": "Melanie",
       "date": "13 November 2023",
       "title": " As a student user... ",
       "rating": "5.0",
-      "description": null
+      "positiveFeedback": "I signed up for an account for a while thinking it was an easy to use storage service, until I realized that it is really a higher-end service for enterprises and high-end companies that need to store high quality data, with security and monitoring.",
+      "negativeFeedback": "I didn't give it that much of a chance to find out, but the free trial gave me plenty of time to look at the program and see its functions and uses."
     },
     {
       "reviewerName": "Joaquin",
       "date": "11 November 2023",
       "title": " A good cloud storage option. ",
       "rating": "4.0",
-      "description": "A very useful service, with many accessible tools and plans, it is very useful for companies interested in data analysis and creating applications."
+      "overallFeedback": "A very useful service, with many accessible tools and plans, it is very useful for companies interested in data analysis and creating applications.",
+      "positiveFeedback": "It is a very professional cloud storage service, it offers different tools such as data analysis.",
+      "negativeFeedback": "The free plan contains little storage, so you don't have many opportunities to test the app to convince yourself to sign up for a larger plan."
     },
     {
       "reviewerName": "Julia",
       "date": "15 November 2023",
       "title": " Great application ",
       "rating": "5.0",
-      "description": null
+      "positiveFeedback": "This has made our business and office much more organized which has helped us scale",
+      "negativeFeedback": "At times it needs to update and this can take some time to do this"
     },
     {
       "reviewerName": "Tonia",
       "date": "23 June 2023",
       "title": " Amazon S3 review ",
       "rating": "3.0",
-      "description": "Amazon S3 did exactly what I wanted it to do once I got past the setup obstacles.  It is a bit difficult to navagate.  Amazon does offer free training for their products which is a plus."
+      "overallFeedback": "Amazon S3 did exactly what I wanted it to do once I got past the setup obstacles.  It is a bit difficult to navagate.  Amazon does offer free training for their products which is a plus.",
+      "positiveFeedback": "With Amazon being such a large company, we can use multiple technologies with only one bill.  Amazon is well known and does a good job at storing and retaining my data.  Amazon has many more features than their competitors which is great if you know how to set them up and run them. Amazon S3 does offer free training for their products which is helpful.",
+      "negativeFeedback": "Amazon S3 platform is hard to navigate, I feel it is ment for an advanced user rather than someone who is trying out new technology.  Amazon is a bit higher priced than many competitors."
     }
-  ],
-  []
+  ]
 ]

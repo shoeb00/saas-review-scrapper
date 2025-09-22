@@ -51,6 +51,30 @@ class Scrapper {
     }
   };
 
+  getProductUrl = async (name, baseUrl, path) => {
+    try {
+      const url = new URL(`https://www.capterra.in/search/product`);
+      url.searchParams.set('q', name);
+      const page = await this.goto(url.href);
+      const productUrl = await page.evaluate(() => {
+        const container = document.evaluate(
+          '/html/body/main/div[4]',
+          document,
+          null,
+          XPathResult.FIRST_ORDERED_NODE_TYPE,
+          null
+        ).singleNodeValue;
+        if (!container) return null;
+        return Array.from(container.querySelectorAll('a'))[0]?.href;
+      });
+
+      console.log('Product Url found:', productUrl);
+      return productUrl;
+    } catch (err) {
+      console.error(err);
+    }
+  };
+
   // Run once manually to save cookies after successful login
   saveCookies = async () => {
     const cookies = await this.page.cookies();

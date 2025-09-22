@@ -1,32 +1,11 @@
 import scrapper from './index.js';
 
-const getProductUrl = async name => {
-  try {
-    const url = new URL('https://www.g2.com/search');
-    url.searchParams.set('utf8', '✓');
-    url.searchParams.set('query', name);
-    await scrapper.createSessionG2();
-    const page = await scrapper.goto(url.href);
-    const productUrl = await page.evaluate(() => {
-      const container = document.evaluate(
-        '/html/body/div[6]/div/div[1]/div/div[7]/div/div[2]/div[4]/div[1]/section/div/div/div/div[1]',
-        document,
-        null,
-        XPathResult.FIRST_ORDERED_NODE_TYPE,
-        null
-      ).singleNodeValue;
-      if (!container) return null;
-      return Array.from(container.querySelectorAll('a'))[0]?.href;
-    });
-    return productUrl;
-  } catch (error) {
-    console.error(error);
-  }
-};
+const BASE_URL = 'https://www.g2.com';
+const XPath = '/html/body/div[6]/div/div[1]/div/div[7]/div/div[2]/div[4]/div[1]/section/div/div/div/div[1]';
 
 const getReviews = async (name, start_date, end_date) => {
   try {
-    const productUrl = await getProductUrl(name);
+    const productUrl = await getProductUrl(name, `${BASE_URL}/search`, XPath);
     if (!productUrl) {
       console.error('Product URL not found');
       return null;
