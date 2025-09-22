@@ -1,4 +1,3 @@
-````markdown
 # SaaS Review Scraper (G2 + Capterra + Extensible)
 
 A Puppeteer-based web scraper that extracts SaaS product reviews from **G2** and **Capterra** (with easy extension to more sources).  
