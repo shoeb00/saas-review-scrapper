@@ -4,6 +4,7 @@
 A Puppeteer-based web scraper that extracts SaaS product reviews from **G2** and **Capterra** (with easy extension to more sources).  
 It supports filtering reviews by **company name** and **time period**, and outputs structured JSON files.
 
+![Demo of scraper browsing](https://drive.google.com/file/d/1tby9J1C9RU4yVoXg5z5p0YGSpy6t2gaO/view?usp=drive_link)
 ---
 
 ## ✨ Features
